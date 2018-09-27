@@ -84,8 +84,12 @@
                     <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">
                         Introduction</h3> <br/>
                     <p class="mbr-text align-left mb-0 mbr-fonts-style display-7">Welcome to my final year project blog, "Adventures in teaching bots how to kill people". This is where I document my thoughts and milestones while working on my final year project at the School of Creative Media, City University of Hong Kong. I update this page at least once a week in the form of chapters. My final goal for this project, titled "AI For General FPS" is a fairly bot capable of playing at the level of playing multiple different FPS games at the level of an average human player. </p> <br/>
+<<<<<<< HEAD
+
+=======
                 <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">
                     Chapter 1</h3>
+>>>>>>> e831ce90fafa9472fe0b45ffd3da095093734868
 
             </div>
         </div>
@@ -93,8 +97,16 @@
 </section>
 
 <section class="mbr-section article content3 cid-qYUMDBb4R7" id="content3-s">
-
-
+    <br/>
+  <div>
+    <div class="container">
+        <div class="media-container-row">
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">
+                    Chapter 1</h3>
+        </div>
+        <br/>
+    </div>
+  </div>
 
     <div class="container">
         <div class="media-container-row">
@@ -125,7 +137,11 @@
 
 <section class="mbr-section content4 cid-qY4gZECclL" id="content4-l">
 
+<<<<<<< HEAD
+  <br/>
+=======
 
+>>>>>>> e831ce90fafa9472fe0b45ffd3da095093734868
   <div>
     <div class="container">
         <div class="media-container-row">
@@ -158,6 +174,37 @@
 
 </section>
 
+<<<<<<< HEAD
+<section class="mbr-section article content3 cid-qYUMDBb4R7" id="content3-s">
+  <br/>
+  <div>
+    <div class="container">
+        <div class="media-container-row">
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">
+                    Chapter 3</h3>
+        </div>
+        <br/>
+    </div>
+  </div>
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="row col-12 col-md-8">
+              <div class="mbr-section-text">
+                <p class="mbr-text align-left mb-0 mbr-fonts-style display-7">Thanks to the environments, all I need is a program that can make decisions on which action to play given some video input. These actions are typically indexed by numbers, for example, 0 might be to press the W key and move forward and so on. Of course, analysing video feed is no simple task for a computer, in fact, until recently this component of the project alone was considered worthy of international awards. For this task, we must make use of a convolutional neural network to process the images (video feed is just images played at several frames per second). Since we’ll be working with multiple games, our architecture must be ready to accommodate multiple convolutional nets that perform image segmentation and recognition, one for each game to be precise. </p>
+                <br><p class="mbr-text align-left mb-0 mbr-fonts-style display-7">We’ll also need an LSTM layer or some other recurrent architecture to accommodate time delayed rewards from the system. Now, if you’re wondering what that means, take a look at this paper on <a style="color:blue" href= “https://arxiv.org/pdf/1602.01783.pdf”>Asynchronous Methods for Deep Reinforcement Learning by Volodymyr Mnih (2016) </a> </p>
+                <br/>
+                <p class="mbr-text align-left mb-0 mbr-fonts-style display-7">So, our plan of action is build an deep reinforcement learning system that receives as input the positions of various items of interest in the scene as a vector and outputs the Q values for each action. We then select an action either based on a softmax or an adaptive epsilon greedy strategy. We have a separate convolutional neural network for each game so it’s easier to tag items that look different in different games.
+                 </p><br/>
+
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+=======
+>>>>>>> e831ce90fafa9472fe0b45ffd3da095093734868
 <section once="" class="cid-qY3EjczH8X" id="footer7-j">
 
 
