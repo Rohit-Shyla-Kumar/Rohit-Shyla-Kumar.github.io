@@ -353,20 +353,50 @@
             <div class="row col-12 col-md-8">
               <div class="mbr-section-text">
                 <p class="mbr-text align-left mb-0 mbr-fonts-style display-7">  After writing the scripts to train and test my model, as well as working out kinks with the display to record videos of the training process, I finally came up with a model that performed incredibly well on the basic scenario. Below are videos of the model playing the basic scenario of ZDoom before and after 20 epochs of training. <br/> </p>
-                <video width="320" height="240" controls>
+                <video width="720" height="480" controls>
                 <source src="assets/training-bad.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
+                <br/> <br/>
                 <br/>
-                <video width="320" height="240" controls>
+                <video width="720" height="480" controls>
                 <source src="assets/trained-good.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
+                <p class="mbr-text align-left mb-0 mbr-fonts-style display-7">  As is fairly evident by the above videos, the performance of the model increased drastically from epoch 1 to epoch 20.  <br/> </p>
               </div>
             </div>
         </div>
     </div>
 </section>
+  
+  <section class="mbr-section content4 cid-qY4gZECclL" id="content4-l">
+  <div>
+    <div class="container">
+        <div class="media-container-row">
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">
+                    Chapter 10</h3>
+        </div>
+        <br/>
+    </div>
+  </div>
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="row col-12 col-md-8">
+              <div class="mbr-section-text">
+                <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> After gaining some ground in Doom, I decided to shift my focus to Quake. My mind was set on making the same model work in a similar simple scenario of Quake. That would pretty much service as proof my initial idea to use the same model to play multiple shooters. In the current model, I just have 4 layers (as mentioned previously) the first two do the visual work being convolutional layers and the fully connected layers focus on the decision making with Q-Learning. I’m using the RMS loss function to introduce some non-linearities in the learning process. If the exact same architecture works on a simple Quake scenario, it would just be a matter of separating the visual cortex of each net for each game. To test it out, I had to download <a href="https://github.com/deepmind/lab" style="color:blue"> DeepMind Lab. </a> I learnt more about the Quake environment and DeepMind Lab by reading this <a href= "https://arxiv.org/pdf/1612.03801.pdf" style="color:blue">  paper </a> published by DeepMind. </a> </p>     
+                  <br/><p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> </p><br/>
+
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+  
+  
 <section once="" class="cid-qY3EjczH8X" id="footer7-j">
 
 
