@@ -574,9 +574,11 @@
         <div class="media-container-row">
             <div class="row col-12 col-md-8">
               <div class="mbr-section-text">
-                <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> This was quite a productive week. Below is a simple sketch of the architecture I went with for the system as a whole.  <br/></p>
+                <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> This was quite a productive week. Below is a simple sketch of the architecture I went with for the system as a whole.  <br/>
+                    <img src = "assets/net.jpg" width="640" height="480">
+                <br/></p>
                 <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> Quickly summarizing, we have 3 separate networks, one convolutional for the input images, be it in Doom or CS1.6 (Doom for now) and two fully connected layers for the measurements and goals. This permits a system of dynamic goals which is especially important because it’s the basis of the logic we humans play with. For example, if you notice your health is low, your goal shifts from just getting kills to increasing your health by collecting health packs. Thus, our priorities shift over time and an agent that is only trying to optimize one goal will never succeed as we want it to in such a complex environment.   <br/></p>
-                <p class="mbr-text align-left mb-0 mbr-fonts-style display-7">I’m writing all the code for the network with Tensorflow (despite the models shown in the papers being tested in PyTorch) because I feel confident with Tensorflow after working with it on a few other projects.  <br/></p>
+                <br/> <p class="mbr-text align-left mb-0 mbr-fonts-style display-7">I’m writing all the code for the network with Tensorflow (despite the models shown in the papers being tested in PyTorch) because I feel confident with Tensorflow after working with it on a few other projects.  <br/></p>
              </div>
             </div>
         </div>
@@ -648,8 +650,10 @@
       <div class="media-container-row">
           <div class="row col-12 col-md-8">
             <div class="mbr-section-text">
-              <p class="mbr-text align-left mb-0 mbr-fonts-style display-7">  </p>
-                <br/><p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> </p><br/>
+              <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> I’ve started work on the interactive multiplayer and it seems to be working okay. The central idea is to make it work with on just one computer on the PC’s localhost. This will remove all the hassle of LAN and having to install all the libraries and moving files from one computer to another, having to connect the computers etc.  </p>
+                <br/><p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> To achieve this, we need to host a game on the local host and allow the user to control the player on the host using one script, then open another terminal and run a different script that connects to the localhost but runs the agent’s main function to choose actions.  </p><br/>
+                <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> I achieved the above set up quite easily using VizDoom’s host argument in game arguments while creating the VizDoom instance. I’m also planning on exploring multiprocessing for this task so I don’t have to start up two terminals and run two scripts every time I want to test the multiple player. I could also automate it with a batch file. I’ll upload both of those once I’m done.  </p><br/>
+
 
             </div>
           </div>
@@ -666,7 +670,7 @@
     <div class="container">
         <div class="media-container-row">
                 <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">
-                    Chapter 21</h3>
+                    Chapter 21 & 22</h3>
         </div>
         <br/>
     </div>
@@ -676,8 +680,14 @@
         <div class="media-container-row">
             <div class="row col-12 col-md-8">
               <div class="mbr-section-text">
-                <p class="mbr-text align-left mb-0 mbr-fonts-style display-7">   <br/> </p>
-                <br/>
+                <p class="mbr-text align-left mb-0 mbr-fonts-style display-7">  This was a very busy couple for weeks for me personally, so I wasn’t able to get a lot done. I began the long training process which took two nights. Finally, I had the weights ready in a neat 220-megabyte file (sarcasm).  <br/> </p>
+                  <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> I tested it out a lot on different scenarios using the two-script setup I developed last week and it seemed to work really well. Much better than expected actually. It averaged about four kills a game against me while I managed nine. Not bad, considering I’ve been playing this game for quite some time now. It also seemed quite robust in the sense that it wasn’t repeatedly doing the same things and (thankfully) wasn’t mindlessly running into walls. Below is a video of it playing against me. I’m going to retrain it with some different parameters because I think this can be even better.
+                <video width="720" height="480" controls>
+                                <source src="assets/againstRohit.mp4" type="video/mp4">
+                                  Your browser does not support the video tag.
+                </video>
+              </p>
+              <br/>
              </div>
             </div>
         </div>
