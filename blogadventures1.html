@@ -84,7 +84,7 @@
                     Adventures in teaching bots how to kill people</h2> <br/>
                     <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">
                         Introduction</h3> <br/>
-                    <p class="mbr-text align-left mb-0 mbr-fonts-style display-7">Welcome to my final year project blog, "Adventures in teaching bots how to kill people". This is where I document my thoughts and milestones while working on my final year project at the School of Creative Media, City University of Hong Kong. I update this page at least once a week in the form of chapters. My final goal for this project, titled "AI For General FPS" is a fairly bot capable of playing at the level of playing multiple different FPS games at the level of an average human player. </p> <br/>
+                    <p class="mbr-text align-left mb-0 mbr-fonts-style display-7">Welcome to my final year project blog, "Adventures in teaching bots how to kill people". This is where I document my thoughts and milestones while working on my final year project at the School of Creative Media, City University of Hong Kong. I update this page at least once a week in the form of chapters. My final goal for this project, titled "AI For General FPS" is a bot fairly capable of playing at the level of playing multiple different FPS games at the level of an average human player. </p> <br/>
 
             </div>
         </div>
@@ -208,7 +208,7 @@
               <div class="mbr-section-text">
                 <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> When it comes to programming, there’s no better way to learn that by just trying things out so now that we have a fair idea of how to approach this task, we should start writing some code to model the outlined architecture. First, let’s install the necessary tools and libraries needed for the task, starting with an environment. Since I’m working with <a href= "https://www.python.org/" style= "color:blue">  Python </a>on the Windows platform, I’ll install <a href= "https://www.anaconda.com/download/" style= "color:blue"> Anaconda </a> for Windows and create a virtual environment to act as a container for the project. To create a virtual environment, use the command <strong> conda create -n venv pip python=3.6 </strong> where venv is the name of your environment.  </p>
 
-                <br><p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> The libraries we need include numpy, scikitlearn, pandas, tensorflow (running on the GPU preferably), keras and opencv. To save you the trouble, I created a <a href= "/assets/requirements.txt" style= "color:blue"> requirements file </a>that you can download and install using the command <strong> pip install requirements.txt </strong></p>
+                <br><p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> The libraries we need include numpy, scikitlearn, pandas, tensorflow (running on the GPU preferably), keras and opencv. To save you the trouble, I created a <a href= "/assets/requirements.txt" style= "color:blue"> requirements file </a>that you can download and install using the command <strong> pip install -r trequirements.txt </strong></p>
                 <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> Numpy, scikitlearn and pandas are mostly for manipulating desirable datatypes like numpy arrays and dataframes while Tensorflow and Keras can be used to build the neural networks we require. OpenCV will help us process images efficiently.   </p><br/>
 
               </div>
@@ -416,7 +416,7 @@
               <div class="mbr-section-text">
                 <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> This week I added two convoluted layers (with max pooling) and one fully connected layer and let it have a go at the defend the centre scenario in Doom. After achieving less than ideal results, I increased the number of epochs and decreased the learning rate, giving the program more time to learn and adapt to the delta movements involved in this new situation. Below is the result of two days of training and tuning. It averaged 9 kills over it’s 10 best episodes. <br/><br/> </p>
                 <video width="720" height="480" controls>
-                <source src="assets/defend_the_center.mp4" type="video/mp4">
+                <source src="assets/defend_the_center_good.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
                 <br/>
@@ -575,11 +575,11 @@
             <div class="row col-12 col-md-8">
               <div class="mbr-section-text">
                 <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> This was quite a productive week. Below is a simple sketch of the architecture I went with for the system as a whole.  <br/>
-                    <img src = "assets/net.jpg" width="640" height="480">
+                    <img src = "assets/net.JPG" width="640" height="480">
                 <br/></p>
                 <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> Quickly summarizing, we have 3 separate networks, one convolutional for the input images, be it in Doom or CS1.6 (Doom for now) and two fully connected layers for the measurements and goals. This permits a system of dynamic goals which is especially important because it’s the basis of the logic we humans play with. For example, if you notice your health is low, your goal shifts from just getting kills to increasing your health by collecting health packs. Thus, our priorities shift over time and an agent that is only trying to optimize one goal will never succeed as we want it to in such a complex environment.   <br/></p>
                 <br/> <p class="mbr-text align-left mb-0 mbr-fonts-style display-7">I’m writing all the code for the network with Tensorflow (despite the models shown in the papers being tested in PyTorch) because I feel confident with Tensorflow after working with it on a few other projects.  <br/></p>
-             </div>
+             <br/></div>
             </div>
         </div>
     </div>
@@ -629,7 +629,7 @@
               <div class="mbr-section-text">
                 <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> I’m finally done building the main model architecture. I’ve isolated it and its various helper functions into a single file and class so as to keep the structure modular and easy to use. Here’s the <a href = "assets/agent.py" style= "color:blue">file</a>, just to explain some of it in greater detail, I use the tf.concat function to concatenate the outputs of the different networks, the conv2d function creates a convolutional neural network based on the method parameters and the fc_net function does the same for fully connected layers.  <br/> </p>
                   <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> The reason I’ve opted with this structure rather than just creates the nets in the agent class is so I don’t have to re-write the code to create the multiple different fully connected networks I intend to create (projects generally just use one network so there’s no need to create a function for this). The lrelu function implements the leaky relu activation function required for introducing some non-linearities. The code is commented profusely so you should be able to understand the rest by going through it. </p>
-             </div>
+             <br/></div>
             </div>
         </div>
     </div>
@@ -681,11 +681,7 @@
             <div class="row col-12 col-md-8">
               <div class="mbr-section-text">
                 <p class="mbr-text align-left mb-0 mbr-fonts-style display-7">  This was a very busy couple for weeks for me personally, so I wasn’t able to get a lot done. I began the long training process which took two nights. Finally, I had the weights ready in a neat 220-megabyte file (sarcasm).  <br/> </p>
-                  <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> I tested it out a lot on different scenarios using the two-script setup I developed last week and it seemed to work really well. Much better than expected actually. It averaged about four kills a game against me while I managed nine. Not bad, considering I’ve been playing this game for quite some time now. It also seemed quite robust in the sense that it wasn’t repeatedly doing the same things and (thankfully) wasn’t mindlessly running into walls. Below is a video of it playing against me. I’m going to retrain it with some different parameters because I think this can be even better.
-                <video width="720" height="480" controls>
-                                <source src="assets/againstRohit.mp4" type="video/mp4">
-                                  Your browser does not support the video tag.
-                </video>
+                  <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> I tested it out a lot on different scenarios using the two-script setup I developed last week and it seemed to work really well. Much better than expected actually. It averaged about four kills a game against me while I managed nine. Not bad, considering I’ve been playing this game for quite some time now. It also seemed quite robust in the sense that it wasn’t repeatedly doing the same things and (thankfully) wasn’t mindlessly running into walls. Here is a <a href="https://youtu.be/AqraZmP2LGM"> video</a> of it playing against me. I’m going to retrain it with some different parameters because I think this can be even better.
               </p>
               <br/>
              </div>
@@ -740,7 +736,7 @@
               <div class="mbr-section-text">
                 <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> Very busy week with every course’s final project due but I managed to link the model to the CS1.6 convolutional network and test it against the easy bots on aim_headshot. Unfortunately, the multiplayer for CS1.6 is not going to be as straightforward due to the lack of a platform meant for learning.   <br/> </p>
                   <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> Since we’re simply grabbing the screen buffer images and processing the video stream from there, we obviously can’t run a bot on the same computer as the host (because the bot has to see the view of the character it controls and the player has to be able to see his character’s view). Thus, I have to make this work over LAN or the Internet but I don’t think I have enough time to do this right away so I’m going to have to leave this for later.</p>
-             </div>
+             <br/></div>
             </div>
         </div>
     </div>
@@ -761,11 +757,7 @@
       <div class="media-container-row">
           <div class="row col-12 col-md-8">
             <div class="mbr-section-text">
-              <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> I spend most of my time refactoring and documenting my code this week. I also began on writing the report and preparing for the presentation. I had to do three separate presentations, the final internal presentation to just my advisors, a fast track presentation to encourage students to attend my presentation and a public final presentation. I also had to make a video for the fast track video, I’m not the best when it comes to making videos but here’s what I managed. Below is the final fast track video.
-                  <video width="720" height="480" controls>
-                  <source src="assets/group27.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
+              <p class="mbr-text align-left mb-0 mbr-fonts-style display-7"> I spend most of my time refactoring and documenting my code this week. I also began on writing the report and preparing for the presentation. I had to do three separate presentations, the final internal presentation to just my advisors, a fast track presentation to encourage students to attend my presentation and a public final presentation. I also had to make a video for the fast track video, I’m not the best when it comes to making videos but here’s what I managed. <a href="https://youtu.be/RgNJNBkR_3c">Here</a> is the final fast track video.
                   <br/>
             </div>
           </div>
