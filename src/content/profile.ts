@@ -4,7 +4,7 @@ export const profile = {
   tagline: "Systems engineer. Builder. Writer.",
   email: "rohitshylakumar@protonmail.com",
   summary:
-    "I design and run the computer systems a global bank depends on — so they stay up, stay secure, and mostly run themselves. I also write about AI, engineering, investing, and philosophy.",
+    "I configure and maintain the linux systems a global bank depends on - so they stay up, stay secure, and mostly run themselves. I also write about AI, engineering, investing, history and philosophy.",
   motd: "Everything, Everywhere, All The Time.",
   places: [
     { code: "IN", name: "India" },
@@ -50,11 +50,6 @@ export const profile = {
       detail: "Linux system administration",
       date: "Mar 2023",
     },
-    {
-      name: "OpenHack: DevOps for Data Science",
-      detail: "Microsoft OpenHack",
-      date: "Jul 2020",
-    },
   ],
   awards: [
     "Certified Enterprise Engineer — Role Model, technical & leadership programme (2023)",
@@ -65,18 +60,18 @@ export const profile = {
   interests: [
     "Philosophy",
     "Ancient cultures",
-    "Chess",
     "Investing",
+    "Chess",
     "Theatre",
     "Football",
     "Cricket",
     "Writing",
-    "International relations",
+    "Politics & International relations",
   ],
   about: [
-    "I am a systems engineer. For six years at HSBC I have designed, built, and looked after Linux and cloud platforms used by retail banking, commercial banking, and securities trading — including market systems where being down is not an option.",
-    "The work I care about starts with how a machine is actually built and ends with something a team can run without me. I write automation so people do not have to repeat the same failure. One standard I led now applies across the bank’s Linux estate and took more than USD 30 million of licensing cost off the books.",
-    "Before the bank I studied creative media and could not leave computer vision or game AI alone: an internship on India’s first driver-assistance system, a camera app for visually impaired bowlers, an agent that learned to play Doom and Counter-Strike. That habit of starting from first principles never left.",
-    "Outside work I read philosophy, follow markets, play chess, and write. This site is the public notebook.",
+    "I am a systems engineer. For seven years at HSBC I have designed, built, and looked after Linux and cloud platforms used by retail banking, commercial banking, and securities trading - including market systems where being down is not an option.",
+    "The work I care about starts with how a machine is actually built and ends with automation so good, I could 'working from home' on a beach in Sai Kung and no one notices. I've lead the modernization of a vast global Linux estate that took more than USD 30 million of licensing cost off the books.",
+    "My design philosophy is to start from first principles, build, test and iterate constantly, all while optimizing every last ounce of performance out of the hardware I have. Physics is the law. Everything else is just a recommendation.",
+    "Outside work I like to read history and philosophy, invest my money for outsized returns, play video games, and write. I also obsess over privacy centric, open source technology. I'm extremely opinionated on topics I understand extensively and unnaturally chill about the things I don't. This site is my public notebook.",
   ],
 } as const;
