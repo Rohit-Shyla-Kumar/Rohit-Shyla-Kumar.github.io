@@ -14,42 +14,19 @@ export const posts: Post[] = [
     date: "2019-06-01",
     tags: ["AI", "engineering", "games"],
     excerpt:
-      "A journal of the final-year project: a generalist agent for Doom and Counter-Strike 1.6, written while the thing was still catching fire in interesting ways.",
-    body: `This is the public journal of my final-year project at the School of Creative Media, City University of Hong Kong. The brief I gave myself was rude: a bot fairly capable of playing *multiple* first-person shooters at the level of an average human. Not a script. Not a Doom-only trick. A generalist.
-
-If you were paying attention around then you had already watched OpenAI's Dota agent take games off Dendi. I was not going to match that compute. I was going to find out what I was actually up against.
-
-## The shape of the problem
-
-An FPS agent has to see, decide, and act on a clock the environment does not pause. That is a Markov decision process whether or not you enjoy the phrase. Bellman's dynamic programming, Sutton's temporal differences, Q-learning as "the Markov equation with a max()" — the theory is small. The engineering is not.
-
-Q-learning is intuitive. You reward particular states, you ask the agent for a policy that maximises return, you let the max operator do the greed. Deep Q-learning is the same idea with a convolutional front-end because the state is pixels, not a tidy vector.
-
-For multiple games the architecture has to admit more than one vision stack. Image segmentation and recognition are not a shared free lunch across Doom and Counter-Strike. The policy head can be related; the eyes are not.
-
-## Environments
-
-Making a physical robot to press keys is comedy, not a methodology. You need an environment with direct access to controls.
-
-ViZDoom was the honest starting point: frame buffer, game variables, a Python API, scenarios that range from "room with one enemy" to "defend the centre". OpenAI Gym sat underneath as the glue. DeepMind Lab looked tempting and then spent a season being buggy on both Windows and Linux. Counter-Strike 1.6 had no bot-friendly platform worth the name, so the path there was screen grab, a tiny key-event layer, and the acceptance that the observation is now a real desktop.
-
-The first script always presses random keys. If that loop is wrong, no amount of DQN will save you.
-
-## What actually moved
-
-I trained on simple Doom scenarios first. Kills per episode went from noise to something I would not be ashamed of in a lab demo. Against me in a deathmatch it averaged about four kills a game while I managed nine — and I have been playing the game for years. It was not hugging walls. It was not a loop. That robustness is the thing I still care about more than a leaderboard screenshot.
-
-Papers I kept on the desk: *Playing FPS Games with Deep Reinforcement Learning*, the original Atari DQN, Arnold at CMU, actor-critic curriculum work, Deep Successor RL, population-based DM work in Quake. The lesson across them is boring and true: the environment and the curriculum do more than the clever layer.
-
-I wrote the networks in TensorFlow because I already had scars there. PyTorch was winning the paper race. Tools are not identity.
-
-## What I would still defend
-
-A generalist FPS agent is an AI ethics object as much as a systems one. The project title was a joke with a straight face. Teaching a machine to aim is easy to aestheticise and easier to industrialise. I wanted the notes public so the work could be argued with, not just graded.
-
-The code from that year is the kind of code you write when you are also writing the report: \`grabscreen.py\`, \`keys.py\`, an agent that is a little too aware of the laptop fan. I would build it differently now. I would not skip the journal.
-
-Full references from the original chapters — Bellman, Sutton, Mnih, Chaplot, and the rest — are still the right reading list if you want to follow the same corridor.
+    "A journal of the final-year project: a generalist agent for Doom and Counter-Strike 1.6, written through my final year of university.",
+    body: `
+    ## Introduction
+    Welcome to my final year project blog, "Adventures in teaching bots how to kill people". This is where I document my thoughts and milestones while working on my final year project at the School of Creative Media, City University of Hong Kong. I update this page at least once a week in the form of chapters. My final goal for this project, titled "AI For General FPS" is a bot fairly capable of playing at the level of playing multiple different FPS games at the level of an average human player.
+    If you follow developments in the AI field closely, you've probably already seen the Dota 2 match between Open AI bot and Dendi. In case you haven't, check it out <a href = https://www.youtube.com/watch?v=7U4-wvhgx0w style="color:blue">here.</a></p>
+    Well, if I was going to pull off anything even close to this crazy, I'd need to find out what I'm up against first, so I started going through some of the literature on the topic, this is pretty much the very least you should be familiar with if you want to do something like this yourself.</p>
+                <p class="mbr-text align-left mb-0 mbr-fonts-style display-7">
+                  <div>
+                  <br/><a style="color:blue" href="https://www.rand.org/content/dam/rand/pubs/papers/2008/P550.pdf">The Theory of Dynammic Programming by Richard Bellman </a> <br>
+                  <a style="color:blue" href="https://pdfs.semanticscholar.org/968b/ab782e52faf0f7957ca0f38b9e9078454afe.pdf"> A Survey of Applications of Markov Decision Processes by D. J. White</a><br>
+                  <a style="color:blue" href="https://link.springer.com/article/10.1007/BF00115009"> Learning to predict by the methods of temporal differences by Richard S. Sutton </a><br>
+                  </div>
+                </p>
 `,
   },
   {

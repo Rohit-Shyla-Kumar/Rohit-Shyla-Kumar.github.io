@@ -12,11 +12,11 @@ export const domains: Domain[] = [
     blurb:
       "Languages are tools. The work is a clear model of the system — then Python, Go, or C++ in whichever place it fits.",
     skills: [
+      { name: "C / C++", level: 95 },
       { name: "Python", level: 93 },
       { name: "Systems design", level: 90 },
       { name: "SQL / Postgres / Redis", level: 80 },
-      { name: "C / C++", level: 78 },
-      { name: "Go", level: 72 },
+      { name: "JAVA", level: 72 },
     ],
   },
   {
