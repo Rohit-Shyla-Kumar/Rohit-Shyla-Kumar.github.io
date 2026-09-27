@@ -11,17 +11,17 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "wishlist",
-    name: "Wishlist Invest",
-    role: "Builder",
-    years: "2026",
-    tags: ["JavaScript", "Node", "SQLite", "Investing"],
-    href: "https://github.com/Rohit-Shyla-Kumar/wishlist-invest",
+    id: "linux-profile",
+    name: "Ansible Linux Profile",
+    role: "Project lead",
+    years: "2024 – 2026",
+    tags: ["Ansible", "RHEL", "Security", "Estate-wide"],
     summary:
-      "Buy it now, or let the money compound? A small app that prices a wishlist against future value at 5 / 10 / 25 / 50 years, with cooldowns so impulse has to wait.",
+      "One profile to enforce OS, filesystem, cybersecurity and tooling standards across a global bank estate — and a USD 30 million licensing save as a side effect of doing it properly.",
     points: [
-      "Per-item FX, session auth, local SQLite.",
-      "The question the dashboard asks is the real product.",
+      "Codified the standard instead of arguing it in tickets.",
+      "CVE drift remediation and SLA impact analysis wired in.",
+      "Consumed by application teams as IaaS, not as a lecture.",
     ],
   },
   {
@@ -68,6 +68,20 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: "wishlist",
+    name: "Wishlist Invest",
+    role: "Builder",
+    years: "2026",
+    tags: ["JavaScript", "Node", "SQLite", "Investing"],
+    href: "https://github.com/Rohit-Shyla-Kumar/wishlist-invest",
+    summary:
+      "Buy it now, or let the money compound? A small app that prices a wishlist against future value at 5 / 10 / 25 / 50 years, with cooldowns so impulse has to wait.",
+    points: [
+      "Per-item FX, session auth, local SQLite.",
+      "The question the dashboard asks is the real product.",
+    ],
+  },
+  {
     id: "dsindia",
     name: "Data Science for India",
     role: "Regional director & curriculum",
@@ -88,5 +102,15 @@ export const projects: Project[] = [
     summary:
       "A robot that stores doses and reminds you to take them. First place, Smarter Life Aided by Robots.",
     points: ["Hardware plus software, not a slide deck."],
+  },
+  {
+    id: "adas",
+    name: "ADAS / Computer Vision",
+    role: "Intern, Horus Intellisys",
+    years: "2017",
+    tags: ["C++", "Vision", "Debian"],
+    summary:
+      "India's first Advanced Driver Assistance System — classifier work and a C++ vision path taken from 1s to 4ms. Also led a McDonald's drive-through PoC and a safer-bus-stop experiment.",
+    points: ["Precision +15% on the classifier.", "gdb, g++, Make, no mystery."],
   },
 ];
