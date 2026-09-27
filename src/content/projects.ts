@@ -11,17 +11,17 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "linux-profile",
-    name: "Ansible Linux Profile",
-    role: "Project lead",
-    years: "2024 – 2026",
-    tags: ["Ansible", "RHEL", "Security", "Estate-wide"],
+    id: "wishlist",
+    name: "Wishlist Invest",
+    role: "Builder",
+    years: "2026",
+    tags: ["JavaScript", "Node", "SQLite", "Investing"],
+    href: "https://github.com/Rohit-Shyla-Kumar/wishlist-invest",
     summary:
-      "One profile to enforce OS, filesystem, cybersecurity and tooling standards across a global bank estate — and a USD 30 million licensing save as a side effect of doing it properly.",
+      "Buy it now, or let the money compound? A small app that prices a wishlist against future value at 5 / 10 / 25 / 50 years, with cooldowns so impulse has to wait.",
     points: [
-      "Codified the standard instead of arguing it in tickets.",
-      "CVE drift remediation and SLA impact analysis wired in.",
-      "Consumed by application teams as IaaS, not as a lecture.",
+      "Per-item FX, session auth, local SQLite.",
+      "The question the dashboard asks is the real product.",
     ],
   },
   {
@@ -52,33 +52,6 @@ export const projects: Project[] = [
       "Won Technologies for the Elderly and Disabled Makeathon.",
       "Best of the Best — Best Innovation 2017.",
       "Image processing on-device, spoken result to the bowler.",
-    ],
-  },
-  {
-    id: "one-data",
-    name: "One Data Dashboard",
-    role: "Project lead",
-    years: "2019 – 2021",
-    tags: ["Grafana", "Analytics", "Multi-region"],
-    summary:
-      "Enterprise dashboards that aggregate and correlate operational datasets across regions so leadership can see one picture instead of twelve exports.",
-    points: [
-      "Real-time compliance and platform health.",
-      "Built as a graduate, still the kind of thing I would build now.",
-    ],
-  },
-  {
-    id: "wishlist",
-    name: "Wishlist Invest",
-    role: "Builder",
-    years: "2026",
-    tags: ["JavaScript", "Node", "SQLite", "Investing"],
-    href: "https://github.com/Rohit-Shyla-Kumar/wishlist-invest",
-    summary:
-      "Buy it now, or let the money compound? A small app that prices a wishlist against future value at 5 / 10 / 25 / 50 years, with cooldowns so impulse has to wait.",
-    points: [
-      "Per-item FX, session auth, local SQLite.",
-      "The question the dashboard asks is the real product.",
     ],
   },
   {
