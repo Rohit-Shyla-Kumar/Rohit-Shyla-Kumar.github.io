@@ -41,7 +41,7 @@ export const posts: Post[] = [
 
     We have some basic understanding of neural networks and reinforcement learning, now we need to sort out the non-machine learning stuff. First off, even if out bot knew how to play an FPS game, how would it? Making a physical robot to press buttons on a keyboard is obviously not a viable option.
 
-    What we need is an environment where my bot can play with direct access to the game's controls. Thankfully, people have considered this problem before and built environments for some of the more popular game. OpenAI has an awesome environment to train and test bots called OpenAI Gym. It covers a lot of Atari games and most importantly, for our purpose, Doom. Since the FPS genre started with Doom, I may as well start with Doom too. If you want to learn more about the OpenAI gym environment, this is where to start - [**About OpenAI Gym**](https://openai.com/index/openai-gym-beta/)
+    What we need is an environment where my bot can play with direct access to the game's controls. Thankfully, people have considered this problem before and built environments for some of the more popular game. OpenAI has an awesome environment to train and test bots called OpenAI Gym. It covers a lot of Atari games and most importantly, for our purpose, Doom. Since the FPS genre started with Doom, I may as well start with Doom too. If you want to learn more about the OpenAI gym environment, this is where to start - **[About OpenAI Gym]**(https://openai.com/index/openai-gym-beta/)
 
     There's also been some research on bots that can play Quake 3, another game that absolutely defined the genre. Find out more here. These environments are open source and thus the best place for me to start as compared to writing my own code to run on top of the game for my bot to access the controls and receive rewards.
 
@@ -68,18 +68,25 @@ export const posts: Post[] = [
     For some further research, I also read the following papers and recommend strongly that you do the same.
 
     - [Playing FPS Games With Deep Reinforcement Learning](https://arxiv.org/pdf/1511.06581)
+
     - [Playing Atari With Deep Reinforcement Learning](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf)
 
     ## Chapter 6
 
     Doing a comprehensive literature review in order to prepare properly for my interim presentation next week. I read the following research papers on the application of reinforcement learning in games with special emphasis the ones that used the ViZDoom engine which I plan on using.
 
-    - [Training Agent For First-Person Shooter Game Wit Actor-Critic Curriculum Learning](https://openreview.net/pdf?id=Hk3mPK5gg)
+    - [Training Agent For First-Person Shooter Game Wit Actor-Critic Curriculum Learning](https://openreview.net/pdf?id=Hk3mPK5gg) 
+
     - [Arnold: An Autonomous Agent to play FPS Games](https://devendrachaplot.github.io/papers/arnold_aaai17.pdf)
+
     - [Learning To Act By Predicting The Future](https://vladlen.info/papers/learning-to-act.pdf)
+
     - [Deep Successor Reinforcement Learning](https://arxiv.org/pdf/1606.02396)
+
     - [Human-level performance in first-person multiplayer games with population-based deep reinforcement learning](https://arxiv.org/pdf/1807.01281)
+
     - [Towards Using First-Person Shooter Computer Games as an Artificial Intelligence Testbed](https://link.springer.com/chapter/10.1007/11552413_40)
+
     - [A Hybrid Fuzzy ANN System for Agent Adaptation in a First Person Shooter](https://onlinelibrary.wiley.com/doi/10.1155/2008/432365)
 
     Yeah, I actually read all of them. Took me almost two days to completely wrap my head around some of the concepts detailed in each paper but it was definetly worth it for now I feel much more confident approaching this project.
@@ -173,7 +180,7 @@ export const posts: Post[] = [
 
     I tested it out a lot on different scenarios using the two-script setup I developed last week and it seemed to work really well. Much better than expected actually. It averaged about four kills a game against me while I managed nine. Not bad, considering I've been playing this game for quite some time now. It also seemed quite robust in the sense that it wasn't repeatedly doing the same things and (thankfully) wasn't mindlessly running into walls or shooting at mirrors. Here is a video of it playing against me. I'm going to retrain it with some different parameters because I think this can be even better.
 
-    !youtube[Deathmatch! Human vs AI [CityU SCM BSc Creative Media - Final Year Project]](https://www.youtube.com/watch?v=AqraZmP2LGM)
+    !youtube[Deathmatch! Human vs AI (CityU SCM BSc Creative Media - Final Year Project)](https://www.youtube.com/watch?v=AqraZmP2LGM)
 
     ## Chapter 23
 
@@ -188,7 +195,7 @@ export const posts: Post[] = [
     ## Chapter 25 & 26
 
     I spend most of my time refactoring and documenting my code this week. I also began on writing the report and preparing for the presentation. I had to do three separate presentations, the final internal presentation to just my advisors, a fast track presentation to encourage students to attend my presentation and a public final presentation. I also had to make a video for the fast track video, I'm not the best when it comes to making videos but here's what I managed. Here is the final fast track video.
-    !youtube[CityU SCM BSc Creative Media - Final Year Project Introduction](https://www.youtube.com/watch?v=aircAruvnKk)
+    !youtube[CityU SCM BSc Creative Media - Final Year Project Introduction](https://www.youtube.com/watch?v=RgNJNBkR_3c)
 
     ## Conclusion
 
