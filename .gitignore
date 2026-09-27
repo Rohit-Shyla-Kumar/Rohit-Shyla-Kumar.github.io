@@ -7,5 +7,7 @@ dist
 *.log
 .DS_Store
 .grok
+.cursor
 screenshots
 artifacts
+AGENTS.md
